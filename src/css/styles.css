@@ -121,12 +121,34 @@ body {
   width: 360px;
 }
 
-/* STYLES LOADER */
-
-.loader-div {
-  display: flex;
-  justify-content: center;
+.load-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  width: 125px;
+  line-height: 1.5;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  border: none;
+  padding: 0;
 }
+.load-button:hover {
+  background-color: #6c8cff;
+}
+.load-button:disabled {
+  background-color: #8e8989;
+}
+
+.load-button.is-hidden {
+  display: none;
+}
+
+/* STYLES LOADER */
 
 .loader {
   width: 16px;
@@ -139,6 +161,10 @@ body {
   box-shadow: -24px 0 #fd0101, 24px 0 #fd0101;
   box-sizing: border-box;
   animation: shadowPulse 2s linear infinite;
+}
+
+.loader.is-hidden {
+  display: none;
 }
 
 @keyframes shadowPulse {
