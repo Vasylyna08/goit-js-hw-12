@@ -13,6 +13,7 @@ const formEl = document.querySelector('.form');
 const galleryEl = document.querySelector('.gallery');
 const loaderEl = document.querySelector('.loader');
 const loadButtonEl = document.querySelector('.load-button');
+const liEl = document.querySelector('.gallery-item');
 
 const hiddenClass = 'is-hidden';
 
@@ -140,7 +141,6 @@ function createMarkup(data) {
 }
 
 function scrollPage() {
-  const liEl = document.querySelector('.gallery-item');
   const twoHeight = liEl.getBoundingClientRect().height * 2;
 
   window.scrollBy({
